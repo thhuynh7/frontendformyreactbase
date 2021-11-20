@@ -123,6 +123,15 @@ function Main() {
                   return null
                 }}
               />
+                     {" "}
+              <Route
+                path="/shop"
+                component={() => {
+                  window.location.href = "https://a234-web422.netlify.app/"
+                  return null
+                }}
+              />
+
               <Route path="/profile/:username">
                 <Profile />
               </Route>
