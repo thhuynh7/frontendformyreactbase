@@ -115,6 +115,14 @@ function Main() {
           <Header />
           <Suspense fallback={<LoadingDotsIcon />}>
             <Switch>
+                     {" "}
+              <Route
+                path="/covid"
+                component={() => {
+                  window.location.href = "https://thaistore.netlify.app/"
+                  return null
+                }}
+              />
               <Route path="/profile/:username">
                 <Profile />
               </Route>
